@@ -1,0 +1,49 @@
+.header__nav{
+  border-bottom: 1px solid $color_text;
+  padding: 20px 0px;
+  width: 80%;
+  margin: 0 auto;
+  @include flex_nav;
+}
+.header__nav__logo{
+  cursor: pointer;
+}
+.header__nav__menu{
+  .fa-caret-down{
+    padding: 5px;
+  }
+  ul li{
+    display: inline-block;
+    margin-right: 40px;
+    }
+  a{
+    text-decoration: none;
+    color: $color_text;
+    font-weight: bold;
+    &:hover{
+      color: $color_link_hover_nav;
+    }
+  }
+  button{
+    cursor: pointer;
+    @include radius_button;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid $color_link_hover_nav;
+    color: $color_link_hover_nav;
+    a{
+      color: $color_link_hover_nav;
+    }
+    &:hover{
+      background-color: $color_link_hover_nav;
+      color: white;
+      a{
+        color: white;
+      }
+    }
+    .fa-google{
+    margin-right: 10px;
+    font-size: 15px;
+    }
+  }
+}

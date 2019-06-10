@@ -1,0 +1,21 @@
+@mixin flex_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin radius_button{
+  border-radius: 10px;
+}
+@mixin font_page{
+  font-family: 'HarmoniaSansProCyr-SemiBd';
+  font-weight: 600;
+}
+@mixin dropdown{
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

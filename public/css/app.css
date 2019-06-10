@@ -1,0 +1,219 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__nav {
+  border-bottom: 1px solid #58402c;
+  padding: 20px 0px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__logo {
+  cursor: pointer;
+}
+
+.header__nav__menu .fa-caret-down {
+  padding: 5px;
+}
+
+.header__nav__menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.header__nav__menu a {
+  text-decoration: none;
+  color: #58402c;
+  font-weight: bold;
+}
+
+.header__nav__menu a:hover {
+  color: #30488f;
+}
+
+.header__nav__menu button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #30488f;
+  color: #30488f;
+}
+
+.header__nav__menu button a {
+  color: #30488f;
+}
+
+.header__nav__menu button:hover {
+  background-color: #30488f;
+  color: white;
+}
+
+.header__nav__menu button:hover a {
+  color: white;
+}
+
+.header__nav__menu button .fa-google {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.home {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_dx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+
+.home_dx img {
+  width: 600px;
+}
+
+.home_sx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
