@@ -5,6 +5,11 @@ $(document).ready(function(){
   $('.dropdown').hide();
   $('.header__nav_2').hide();
 
+  //al click nascondo la barra dei cookies
+  $('#cookies_close').click(function(){
+    $('.cookies').fadeOut(200);
+  });
+
   //dropdown-menu
   $('.header__nav__menu > ul > li:first-child').mouseenter(function(event) {
     $('.dropdown').fadeIn(100);

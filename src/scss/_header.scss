@@ -1,6 +1,17 @@
 header{
   position: relative;
 }
+.cookies{
+  background-color: $color_secondary;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  a{
+    text-decoration: none;
+    color: $color_link_hover_nav;
+  }
+}
 .header__nav{
   border-bottom: 1px solid $color_text;
   padding: 20px 0px;

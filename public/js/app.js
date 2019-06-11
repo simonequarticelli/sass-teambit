@@ -10709,7 +10709,11 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 $(document).ready(function () {
   //nascondo il dropdown-menu e la seconda nav
   $('.dropdown').hide();
-  $('.header__nav_2').hide(); //dropdown-menu
+  $('.header__nav_2').hide(); //al click nascondo la barra dei cookies
+
+  $('#cookies_close').click(function () {
+    $('.cookies').fadeOut(200);
+  }); //dropdown-menu
 
   $('.header__nav__menu > ul > li:first-child').mouseenter(function (event) {
     $('.dropdown').fadeIn(100);
