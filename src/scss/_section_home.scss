@@ -1,7 +1,6 @@
 .home{
-  width: 80%;
-  height: 500px;
-  margin: 0 auto;
+  @include padding_section;
+  @include format_container;
   display: flex;
   justify-content: space-between;
 }
@@ -18,4 +17,42 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  h1{
+    font-size: 60px;
+    color: $color_text;
+    padding: 20px 0px;
+  }
+  p{
+    font-size: 30px;
+    color: $color_text;
+    padding: 10px 0px;
+  }
+  button{
+    @include radius_button;
+    @include style_button;
+    a{
+      @include reset_link;
+    }
+    i{
+      @include style_icon;
+    }
+    &:hover{
+      background-color: $color_link_hover_sec_home;
+      transition: .5s;
+      color: white;
+    }
+  }
+  span{
+    margin: 0px 10px;
+    color: lightgrey;
+  }
+  small>a{
+    @include reset_link;
+    color: $color_text;
+    &:hover{
+      color: $color_link_hover_sec_home;
+    }
+  }
+
+
 }

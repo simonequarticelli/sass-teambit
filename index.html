@@ -5,6 +5,7 @@
     <title>sass-teambit</title>
     <link rel="stylesheet" href="public/css/app.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="public/js/app.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
@@ -15,19 +16,19 @@
         <div class="header__nav__menu">
           <ul>
             <li><a href="#">Solutions<i class="fas fa-caret-down"></i></a>
-              <!-- <div class="dropdown">
+              <div class="dropdown">
                 <ul>
-                  <li>Feedback</li>
-                  <li>Surveys</li>
-                  <li>Reviews</li>
-                  <li>Praise</li>
+                  <li><a href="#">Feedback</a></li>
+                  <li><a href="#">Surveys</a></li>
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Praise</a></li>
                 </ul>
-              </div> -->
+              </div>
             </li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Sign in</a></li>
-            <button type="button" name="button"><i class="fab fa-google"></i><a href="#">Sign up</a></button>
+            <button type="button" name="button"><a href="#"><i class="fab fa-google"></i>Sign up</a></button>
           </ul>
         </div>
       </nav>
@@ -38,15 +39,40 @@
         <h1>Understand, recognize and develop your people</h1>
         <p>Teambit helps teams create a high performing culture with regular feedback.</p>
         <div class="home_sx_button">
-          <button type="button" name="button"><a href="#">Sign up with Google</a></button>
-          or
-          <button type="button" name="button"><a href="#">Sign up with Slack</a></button>
+          <button type="button" name="button"><a href="#"><i class="fab fa-google"></i>Sign up with Google</a></button>
+          <span>or</span>
+          <button type="button" name="button"><a href="#"><i class="fab fa-slack"></i>Sign up with Slack</a></button>
         </div>
-        <small><a href="#">or use your email address </a></small>
+        <small><a href="#">or use your email address <i class="fas fa-long-arrow-alt-right"></i></a></small>
       </div>
       <div class="home_dx">
         <img src="img/illustration-main.jpg" alt="">
       </div>
+    </section>
+
+    <section class="main">
+      <div class="main_container">
+        <div class="main_first">
+          <div class="main_first_title">
+            <h2>Traditional people processes lead to disengagement and turnover.</h2>
+          </div>
+          <div class="main_first_element_container">
+            <div class="main_first_element">
+              <img src="img/hardcore.png" alt="">
+              <p>They are hardcore, formal and disconnected</p>
+            </div>
+            <div class="main_first_element">
+              <img src="img/nofeedback.png" alt="">
+              <p>They don't encourage regular feedback</p>
+            </div>
+            <div class="main_first_element">
+              <img src="img/notsafe.png" alt="">
+              <p>They don't make it safe to speak up</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </body>

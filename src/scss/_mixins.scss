@@ -6,16 +6,45 @@
 @mixin radius_button{
   border-radius: 10px;
 }
+@mixin style_button{
+  background-color: $color_link_hover_nav;
+  color: white;
+  margin: 20px 0px;
+  border: 0px;
+  padding: 10px 20px;
+}
 @mixin font_page{
-  font-family: 'HarmoniaSansProCyr-SemiBd';
+  font-family: 'HarmoniaSansProCyr-Regular';
   font-weight: 600;
 }
 @mixin dropdown{
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
 @mixin flex_center{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@mixin reset_link{
+  color: white;
+  text-decoration: none;
+}
+@mixin style_icon{
+  margin-right: 7px;
+  font-size: 15px;
+}
+@mixin padding_section{
+  padding: 100px 0px;
+}
+@mixin format_container{
+  width: 80%;
+  margin: 0 auto;
+}
+@mixin dropdown_flex{
+  position: absolute;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  background: #fff;
+  border: 1px solid #e1ddd4;
 }

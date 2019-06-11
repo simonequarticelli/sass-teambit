@@ -9,6 +9,9 @@
   cursor: pointer;
 }
 .header__nav__menu{
+  ul:first-child li{
+    position: relative;
+  }
   .fa-caret-down{
     padding: 5px;
   }
@@ -25,7 +28,6 @@
     }
   }
   button{
-    cursor: pointer;
     @include radius_button;
     padding: 10px;
     background-color: white;
@@ -33,6 +35,7 @@
     color: $color_link_hover_nav;
     a{
       color: $color_link_hover_nav;
+      padding: 20px 5px;
     }
     &:hover{
       background-color: $color_link_hover_nav;
@@ -41,9 +44,8 @@
         color: white;
       }
     }
-    .fa-google{
-    margin-right: 10px;
-    font-size: 15px;
+    i{
+      @include style_icon;
     }
   }
 }
