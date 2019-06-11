@@ -1,9 +1,35 @@
+header{
+  position: relative;
+}
 .header__nav{
   border-bottom: 1px solid $color_text;
   padding: 20px 0px;
   width: 80%;
   margin: 0 auto;
   @include flex_nav;
+}
+.header__nav_2{
+  padding: 10px 150px;
+  @include flex_nav;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  background: #fff;
+  border: 1px solid #e1ddd4;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  #blue{
+    @include radius_button;
+    padding: 10px;
+    background-color: $color_link_hover_nav;
+    a{
+      padding: 20px 5px;
+      color: white;
+    }
+    &:hover{
+      background-color: $color_link_hover_sec_home;
+    }
+  }
 }
 .header__nav__logo{
   cursor: pointer;
